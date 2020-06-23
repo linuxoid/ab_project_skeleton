@@ -1,0 +1,7 @@
+HOW TO INSTALL
+
+1. Unzip add-on file in your site's packages/ folder
+2. Login to your site as an administrator
+3. Find "Add Functionality" page in Dashboard
+4. Find this package in list of packages Awaiting installation
+5. Click "Install" button

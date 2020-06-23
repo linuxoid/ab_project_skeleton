@@ -1,0 +1,63 @@
+.ab-package-skeleton-block-skeleton-list { margin-top: 20px; }
+
+.ab-package-skeleton-block-skeleton-form .fa-angle-down, .ab-package-skeleton-block-skeleton-form .fa-angle-up { margin-left: 10px; }
+
+.ab-package-skeleton-block-skeleton-form a.show-hide.bottom { 
+    display: block; 
+    margin-top: 20px; 
+}
+
+.ab-package-skeleton-block-skeleton-form a.show-hide:hover { cursor: pointer; }
+
+.ab-package-skeleton-block-skeleton-form .ab-package-skeleton-block-skeleton-advanced-search { display: none; }
+
+.ab-package-skeleton-block-skeleton-form .buttons { margin-top: 20px; }
+
+.form-group.form-select {
+    position: relative;
+    display: block;
+}
+
+.form-group.form-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-group.form-select:after {
+    content:"\f078";
+    font-family: FontAwesome;
+    color: #666666;
+    position: absolute; 
+    right: 5px; 
+    top: 32px;
+    z-index: 1;
+    width: 20px;
+    height: 100%;  
+    pointer-events: none;    
+}
+
+.form-group.form-select.form-sort:after {
+    top: 7px;
+}
+
+/* CAUTION: IE hackery ahead */
+.form-group.form-select select::-ms-expand { 
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    .form-group.form-select select {
+        background:none\9;
+        padding: 5px\9;
+    } 
+}
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+@media (min-width: 768px) and (max-width: 991px) { }
+
+@media all and (max-width: 767px) { }
