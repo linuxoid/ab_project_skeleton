@@ -83,8 +83,8 @@ class Controller extends Package implements ProviderAggregateInterface
     public function on_start()
     {
         $al = AssetList::getInstance();
-        $al->register('javascript', 'ab_package_skeleton_dashboard', 'js/ab_package_skeleton_dashboard.js', array('version' => '1', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => false, 'combine' => false), $this);
-        $al->register('css', 'ab_package_skeleton_dashboard', 'css/ab_package_skeleton_dashboard.css', array('version' => '1', 'position' => Asset::ASSET_POSITION_HEADER, 'minify' => false, 'combine' => false), $this);
+        $al->register('javascript', 'ab_package_skeleton_dashboard', 'js/ab_package_skeleton_dashboard.js', array('version' => '1', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true), $this);
+        $al->register('css', 'ab_package_skeleton_dashboard', 'css/ab_package_skeleton_dashboard.css', array('version' => '1', 'position' => Asset::ASSET_POSITION_HEADER, 'minify' => true, 'combine' => true), $this);
     }
     
     public function install() 
